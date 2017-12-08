@@ -5,10 +5,7 @@ def MainFunction(data):
 
 	while True:
 		jump = jumps[current_pos]
-		if jump >= 3:
-			jumps[current_pos] -= 1
-		else:
-			jumps[current_pos] += 1
+		jumps[current_pos] += 1
 		current_pos += jump
 		if current_pos >= len(jumps):
 			print(steps)
